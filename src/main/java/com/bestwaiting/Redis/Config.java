@@ -11,13 +11,13 @@ public class Config extends Properties {
 	 */
 	private static final long serialVersionUID = 8082237910317527850L;
 	private static Config instance = null;
-    private Config() {
-        InputStream in = ClassLoader.getSystemClassLoader().getResourceAsStream("config.xml");
+    public Config() {
+        InputStream in = Config.class.getResourceAsStream("/config.xml");
         try {
-            loadFromXML(in);
+        	loadFromXML(in);
             in.close();
         } catch (IOException ioe) {
-
+        	System.err.println(ioe.toString());
         }
     }
     public static synchronized Config getInstance() {

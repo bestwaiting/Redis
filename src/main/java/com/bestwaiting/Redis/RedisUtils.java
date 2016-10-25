@@ -3,9 +3,7 @@ package com.bestwaiting.Redis;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
 import org.apache.log4j.Logger;
-
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -18,7 +16,7 @@ public class RedisUtils {
     private static JedisPool redisPool;
     static{
     	Config conf=Config.getInstance();
-    	REDIS_IP=conf.getString("jedis.ip","127.0.0.1");
+    	REDIS_IP=conf.getString("jedis.ip","101.200.190.129");
     	REDIS_PORT=conf.getInt("jedis.port",6379);
     	REDIS_PASSWORD=conf.getString("jedis.password",null);
         JedisPoolConfig config=new JedisPoolConfig();

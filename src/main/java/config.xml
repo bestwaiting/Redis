@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>   
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">  
+<properties>     
+	<comment>redis</comment>
+    <entry key="jedis.ip">101.200.190.129</entry>     
+    <entry key="jedis.port">6379</entry>     
+    <entry key="redis.pool.expire">1200</entry> 
+    <entry key="redis.pool.maxActive">100</entry> 
+    <entry key="redis.pool.maxIdle">1200</entry> 
+    <entry key="redis.pool.maxWait">100000</entry> 
+    <entry key="redis.pool.testOnBorrow">true</entry> 
+    <entry key="redis.pool.testOnReturn">true</entry> 
+    <entry key="redis.pool.setTestWhileIdle">true</entry> 
+</properties>   
