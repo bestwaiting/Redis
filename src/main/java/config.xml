@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">  
 <properties>     
 	<comment>redis</comment>
-    <entry key="jedis.ip">101.200.190.129</entry>     
+    <entry key="jedis.ip">127.0.0.1</entry>     
     <entry key="jedis.port">6379</entry>     
     <entry key="redis.pool.expire">1200</entry> 
     <entry key="redis.pool.maxActive">100</entry> 
